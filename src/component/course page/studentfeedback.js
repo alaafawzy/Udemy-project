@@ -1,89 +1,53 @@
 import React from 'react'
 
-function Studentfeedback() {
+function Studentfeedback(props) {
   return (
     <section>
-        <div class="container">
-          <div class="row">
-            <div class="col col-8">
+        <div className="container">
+          <div className="row">
+            <div className="col col-8">
               <div>
       
-                <h2>Student feedback</h2>
+                <h2 classNameName='student-header'>Student feedback</h2>
       
-                <div class="feadback-flow ">
+                <div className="feadback-flow ">
       
-                  <div class="feedback-summary">
-                    <span class="feadback-img">4.4</span>
-                    <div class="feedback-star">
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star-half-full checked"></span>
-                      <span class="fas fa-star-half-alt checked"></span>
+                  <div className="feedback-summary">
+                    <span className="feadback-img">{props.course.rating}</span>
+                    <div className="feedback-star">
+                      <span className="fa fa-star checked"></span>
+                      <span className="fa fa-star checked"></span>
+                      <span className="fa fa-star checked"></span>
+                      <span className="fa fa-star checked"></span>
+                      <span className="fa fa-star-half-full checked"></span>
+                      <span className="fas fa-star-half-alt checked"></span>
                     </div>
                     <p>Course Rating</p>
                   </div>
       
       
-                  <div class="feadback-rating">
-                    <progress value="46" max="100" style="height:9px;"> 32% </progress>
-      
-                    <progress value="36" max="100" style="height:9px;"> 32% </progress>
-      
-                    <progress value="13" max="100" style="height:9px;"> 32% </progress>
-      
-                    <progress value="3" max="100" style="height:9px;"> 32% </progress>
-      
-                    <progress value="2" max="100" style="height:9px;"> 32% </progress>
+                  <div className="feadback-rating">
+                    {props.course.studentFeedback.map((it)=>{
+                      return(
+                        <progress value={it} max="100" > {it} </progress>
+                      )
+                    })}
                   </div>
       
-                  <div class="feadback-rating-flow2">
-                    <div>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star-half-full checked"></span>
-                      <span class="fas fa-star-half-alt checked"></span>
-                      <a href="#">46%</a>
+                  <div className="feadback-rating-flow2">
+                    {props.course.studentFeedback.map((it)=>{
+                        return(
+                          <div>
+                      <span className="fa fa-star checked"></span>
+                      <span className="fa fa-star checked"></span>
+                      <span className="fa fa-star checked"></span>
+                      <span className="fa fa-star checked"></span>
+                      <span className="fa fa-star-half-full checked"></span>
+                      <span className="fas fa-star-half-alt checked"></span>
+                      <a href="#">{it}</a>
                     </div>
-                    <div>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star-half-full checked"></span>
-                      <span class="fas fa-star-half-alt checked"></span>
-                      <a href="#">36%</a>
-                    </div>
-                    <div>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star-half-full checked"></span>
-                      <span class="fas fa-star-half-alt checked"></span>
-                      <a href="#">13%</a>
-                    </div>
-                    <div>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star-half-full checked"></span>
-                      <span class="fas fa-star-half-alt checked"></span>
-                      <a href="#">3%</a>
-                    </div>
-                    <div>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star-half-full checked"></span>
-                      <span class="fas fa-star-half-alt checked"></span>
-                      <a href="#">2%</a>
-                    </div>
+                        );
+                    })}
       
       
                   </div>

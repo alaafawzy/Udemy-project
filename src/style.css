@@ -959,12 +959,15 @@ display: flex;
 flex-flow: row wrap;
 list-style: none;
 }
-progress {
-border: none;
-display: block;
-width: 250px;
-margin: 20px;
-
+.student-header{
+  margin: 20px 0;
+}
+.feadback-rating progress {
+  border: none;
+  display: block;
+  width: 250px;
+  margin: 20px;
+  height: 10px;
 }
 progress::-webkit-progress-value {
 background: #6a6f73;

@@ -9,11 +9,11 @@ function Navbar() {
             <div className="menu1">
                 <i className="fa-solid fa-bars"></i>
             </div>
-            <Link to="/"><img src="logo-udemy.svg" alt="udemy logo" className="logo" /></Link>
+            <Link to="/"><img src="/logo-udemy.svg" alt="udemy logo" className="logo" /></Link>
             <div className="dropdown nav-media">
                <Link to="/categories" className="dropdownbtn hoverbutt ">Categories</Link>
             </div>
-            <div class="search nav-media">
+            <div className="search nav-media">
                 <form action="" className="search-form">
                 <button type="submit" className="search-icon"><i className="fa-solid fa-magnifying-glass"></i></button>
                     <input type="text" className="search-input" placeholder="Search for anything" />
@@ -31,7 +31,7 @@ function Navbar() {
             </div>
             <Link to="/login" className="login btn-1 btnhover nav-media"><span>Login</span></Link>
             <Link to="/sign-up" className="signup btn-1 nav-media"><span>Sign up</span></Link>
-            <Link to="/" href="#" class="lang btn-1 btnhover nav-media"><i className="fa-solid fa-globe"></i></Link>
+            <Link to="/" href="#" className="lang btn-1 btnhover nav-media"><i className="fa-solid fa-globe"></i></Link>
         </div>
     </nav>
   )

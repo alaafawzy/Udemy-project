@@ -3,9 +3,9 @@ import React from 'react'
 function Footer() {
   return (
     <footer>
-      <div class="footer-secsion1">
+      <div className="footer-secsion1">
   
-        <div class="footer-secsion1-div1">
+        <div className="footer-secsion1-div1">
   
           <span>
             Top companies choose
@@ -23,8 +23,8 @@ function Footer() {
         </div>
         
       </div>
-      <hr class="footer-line" />
-      <div class="footer-secsion2">
+      <hr className="footer-line" />
+      <div className="footer-secsion2">
         <ul>
           <li><a href="#">Udemy Business</a></li>
           <li><a href="#">Teach on Udemy</a></li>
@@ -47,12 +47,12 @@ function Footer() {
           <li><a href="#">Accessibility statement</a></li>
         </ul>
         <button>
-          <i class="fa-solid fa-globe"></i>
+          <i className="fa-solid fa-globe"></i>
           <span>English</span>
         </button>
       </div>
   
-      <div class="footer-secsion3">
+      <div className="footer-secsion3">
           <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" />
           <span>© 2022 Udemy, Inc.</span>
       </div>

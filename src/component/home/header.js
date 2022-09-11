@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className="head">
             <div className="head-container">
-                <img className="test" src="head.jpg"alt="hand reaching for a clock" />
+                <img className="test" src="/head.jpg"alt="hand reaching for a clock" />
             
             <div className="header-paragraph">
                 <h1 className="hea">New to Udemy? Lucky you.</h1>

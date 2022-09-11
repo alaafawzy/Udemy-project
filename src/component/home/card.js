@@ -1,44 +1,45 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Card = (props) => {
   return (
     <div className="cart1">
-      <a href={props.course.link}>
+      
+      <Link to={props.course.link}>
         <img
           src={props.course.image}
           className="cart-img"
           alt={props.course.title}
         />
-      </a>
+      </Link>
       <h3>
-        <a href={props.course.link} className="course-name">
+        <Link to={props.course.link} className="course-name">
           {props.course.title}
-        </a>
+        </Link>
       </h3>
       <div>
         <span>
-          <a href={props.course.link} className="auther">
+          <Link to={props.course.link} className="auther">
             {props.course.author}
-          </a>
+          </Link>
         </span>
       </div>
       <div>
         <span>
-          <a href={props.course.link} className="rating">
+          <Link to={props.course.link} className="rating">
             {props.course.rating}
             <i className="fa fa-star star-color" aria-hidden="true"></i>
             <i className="fa fa-star star-color" aria-hidden="true"></i>
             <i className="fa fa-star star-color" aria-hidden="true"></i>
             <i className="fa fa-star star-color" aria-hidden="true"></i>
             <i className="fas fa-star-half-alt star-color"></i>
-          </a>
+          </Link>
         </span>
       </div>
       <div>
         <span>
-          <a href={props.course.link} className="price">
+          <Link to={props.course.link} className="price">
           E£  {props.course.price}
-          </a>
+          </Link>
         </span>
       </div>
     </div>

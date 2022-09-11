@@ -1,18 +1,22 @@
 import React from 'react'
 
-function Requirements() {
+function Requirements(props) {
   return (
     <section>
-        <div class="container">
-            <div class="row">
-              <div class="col col-8">
-                <h2 class="requirment-header padleft">Requirements</h2>
-                <div class="requirment-list">
+        <div className="container">
+            <div className="row">
+              <div className="col col-8">
+                <h2 className="requirment-header padleft">Requirements</h2>
+                <div className="requirment-list">
                 <ul>
-                  <li>Basic math skills.</li>
-                  <li>Basic to Intermediate Python Skills</li>
-                  <li>Have a computer (either Mac, Windows, or Linux)</li>
-                  <li>Desire to learn!</li>
+                  {
+                    props.course.requirements.map((it)=>{
+                      return(
+                        <li>{it}</li>
+                      );
+                      
+                    })
+                  }
                 </ul>
               </div>
               </div>
