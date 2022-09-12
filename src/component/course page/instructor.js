@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Instructor(props) {
+  const [showMore,setShowMore]=useState(false);
   return (
-    <section>
-        <div className="container">
-            <div className="row">
-              <div className="col col-8">
+    <section id="instructor">
+        
                 <div className="instractor">
         
                   <h2>Instructor</h2>
@@ -43,14 +42,11 @@ function Instructor(props) {
                       </div>
           
                       <div className="instractor-p">
-          
-                        <span>{it.description}
-                        </span>
+                        {showMore?it.description:`${it.description.substring(0,500)}`}
                         
-                        <button>
+                        <button className='more-content' onClick={()=>setShowMore(!showMore)}>
                           <span>
-                            <span>Show more</span>
-                            <span>Show less</span>
+                            {showMore? "show less":"show more"}
                           </span>
                         </button>
           
@@ -66,9 +62,7 @@ function Instructor(props) {
 
 
                 </div>
-              </div>
-            </div>
-          </div>
+              
       </section>
   )
 }

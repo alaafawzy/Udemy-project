@@ -1,6 +1,21 @@
 import React from 'react'
 
 function Navandheader (props) {
+  let butt=""
+  let langs=""
+  function seemore(){
+    let z=document.getElementById("header-more-data")
+    z.style.display="block";
+    z=document.getElementById("header-more-btn")
+    z.style.display="none";
+  }
+  if(props.course.caption_languages.length>2){
+    butt=(<button className="more-btn" id="header-more-btn" onClick={seemore}>
+    <span>see more</span>
+  </button>);
+    langs=<p className='seemore' id="header-more-data">{props.course.caption_languages}</p>;
+  } 
+  
   return (
     <>
         <navbar className="second-navbar">
@@ -18,8 +33,8 @@ function Navandheader (props) {
       <section>
         <div className="details-continer">
           <div className="container">
-            <div className="row padleft">
-              <div className="col col-8">
+            <div className="row ">
+              <div className="col col-lg-8 col-12">
                 <div className="details-menu">
                   <a href="#">Development </a>
                   <span>&nbsp;&gt;&nbsp;</span>
@@ -27,7 +42,9 @@ function Navandheader (props) {
                   <span>&nbsp;&gt;&nbsp;</span>
                   <a href="#"> {props.course.category}</a>
                 </div>
-
+                
+                <img className='responsive responsive-img' src={props.course.image} alt={props.course.title}/>
+                
                 <h1 className="details-header">
                 {props.course.title}
                 </h1>
@@ -49,32 +66,49 @@ function Navandheader (props) {
                 </div>
 
                 <div className="details-author">
-                  <span>Created by</span>
+                  <span>Created by </span>
                   <a href="#"><span>{props.course.author}</span></a>
                 </div>
 
                 <div className="details-more">
                   <div className="last-up">
-                    <i className="fa-duotone fa-bell-exclamation"></i>
+                  <div className='display-block'>
+                    <i class="fa-solid fa-circle-exclamation"></i>
                     <span className="last-updated">Last updated {props.course.lastUpdate}</span>
-
+                    </div>
+                    <div className='display-block'>
                     <i className="fa-solid fa-globe"></i>
                     <span>English</span>
+                    </div>
                   </div>
 
                   <div>
+                    <div className='display-block'>
                     <i className="fa-regular fa-closed-captioning"></i>
-                    <span>English [Auto], Indonesian [Auto] ,</span>
-                    
-                    <button className="more-btn">
-                      <span>5 more</span>
-                    </button>
-                    <p>
-                      [Auto], Polish [Auto], Portuguese [Auto], Romanian [Auto],
-                      Spanish [Auto]
-                    </p>
+                    <span>{props.course.caption_languages[0]}</span>
+                    </div>
+                    {butt}
+                    {langs}
                   </div>
                 </div>
+                <div className="cart-price-data responsive">
+                <span className="cart-price">E£ {props.course.price}</span>
+                </div>
+                <div>
+            <button className="add-to-cart responsive">Add to cart</button>
+                </div>
+                <div className="money-back responsive">
+            <span>30-Day Money-Back Guarantee</span>
+          </div>
+          
+          <div className="money-back responsive">
+          <span>Full life time access</span>
+          </div>
+          <div className="share-gift-coupon responsive header-media-link">
+            <button><a href="">share</a></button>
+            <button><a href="">Gift this course</a></button>
+            <button><a href="">Apply coupon</a></button>
+          </div>
               </div>
             </div>
           </div>

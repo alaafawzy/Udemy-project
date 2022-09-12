@@ -29,8 +29,13 @@ function Coursepage() {
     return (
       <>
       <Navandheader key={coursedata.id} course={coursedata}></Navandheader>
-      <Coursecart key={coursedata.id} course={coursedata}></Coursecart>
       <Thirdnav></Thirdnav>
+      <div className='container'>
+        <div className='row'>
+          <div className='col col-12 col-lg-8'>
+            
+      <Coursecart key={coursedata.id} course={coursedata}></Coursecart>
+      
       <Whatlearn key={coursedata.id} course={coursedata}></Whatlearn>
       <Coursecontent key={coursedata.id} course={coursedata}></Coursecontent>
       <Requirements key={coursedata.id} course={coursedata}></Requirements>
@@ -38,6 +43,9 @@ function Coursepage() {
       <Instructor key={coursedata.id} course={coursedata}></Instructor>
       <Studentfeedback key={coursedata.id} course={coursedata}></Studentfeedback>
       <Reviews key={coursedata.id} course={coursedata}></Reviews>
+      </div>
+      </div>
+      </div>
       </>
     )
   }

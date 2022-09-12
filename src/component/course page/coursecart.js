@@ -4,9 +4,10 @@ function Coursecart(props) {
   return (
     <section>
         <div className="course-cart">
+          <div className='container'>
           <div className="cart-img">
             
-            <img src={props.course.image} alt="" />
+            <img src={props.course.image} alt={props.course.title} />
           </div>
           <div className="container cart-container">
             
@@ -47,8 +48,9 @@ function Coursecart(props) {
           <div className="container cart-container">
             <h4>Training 5 or more people?</h4>
             <p>Get your team access to 17,000+ top Udemy courses anytime, anywhere.</p>
-            <button className="buy-now">Try Udemy Business</button>
+            <button className="buy-now mb-4">Try Udemy Business</button>
           </div>
+        </div>
         </div>
       </section>
   )

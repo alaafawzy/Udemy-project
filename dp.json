@@ -334,13 +334,13 @@
         }
     ],
     "caption_languages": [
-      "English [Auto]",
-      "Indonesian [Auto]",
-      "Italian [Auto]",
-      "Polish [Auto]",
-      "Portuguese [Auto]",
-      "Romanian [Auto]",
-      "Spanish [Auto]"
+      "English [Auto] ",
+      "Indonesian [Auto] ",
+      "Italian [Auto] ",
+      "Polish [Auto] ",
+      "Portuguese [Auto] ",
+      "Romanian [Auto] ",
+      "Spanish [Auto] "
   ]
       },
       {
@@ -669,13 +669,13 @@
           }
       ],
       "caption_languages": [
-        "English [Auto]",
-        "Indonesian [Auto]",
-        "Italian [Auto]",
-        "Polish [Auto]",
-        "Portuguese [Auto]",
-        "Romanian [Auto]",
-        "Spanish [Auto]"
+        "English [Auto], ",
+        "Indonesian [Auto], ",
+        "Italian [Auto], ",
+        "Polish [Auto], ",
+        "Portuguese [Auto], ",
+        "Romanian [Auto], ",
+        "Spanish [Auto], "
     ]
       },
       {
@@ -1020,7 +1020,7 @@
               "description": "Coding Faculty creates high quality technology training content. We aim to teach technology the right way but at the same time putting emphasis on each of our students. We are a growing team of professional trainers who love our work but overall helping our students reach their maximum potential in their career."
           }
       ],
-      "caption_languages": ["English [Auto]"]
+      "caption_languages": ["English [Auto], "]
       },
       {
         "id": 4,
@@ -1347,7 +1347,7 @@
               "description": "Infinite Skills is a Canadian based company who offer a huge and ever growing range of high quality eLearning solutions that teach using studio quality narrated videos backed-up with practical hands-on examples and comprehensive working files. All courses are created by trained educators and experts in video based education.\n\nThe emphasis is on teaching real life skills that are essential for progressing in today's commercial environment."
           }
       ],
-      "caption_languages": ["English"]
+      "caption_languages": ["English, "]
       }
     ]
   }

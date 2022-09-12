@@ -1,7 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { useSearchParams } from 'react-router-dom';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 function Navbar() {
+    const [searchParams, setSearchParams] = useSearchParams("");
+    const [searchvalue,setSearchvalue]=useState("");
+    const navigate = useNavigate();
+    function searchaction(event){
+        event.preventDefault();
+        setSearchParams({
+            searchvalue:searchvalue
+        });
+        let para="/?searchvalue="+searchvalue
+        navigate(para)
+    }
   return (
     <nav className="navbar1">
         <div className="nav-container">
@@ -14,9 +27,11 @@ function Navbar() {
                <Link to="/categories" className="dropdownbtn hoverbutt ">Categories</Link>
             </div>
             <div className="search nav-media">
-                <form action="" className="search-form">
-                <button type="submit" className="search-icon"><i className="fa-solid fa-magnifying-glass"></i></button>
-                    <input type="text" className="search-input" placeholder="Search for anything" />
+                <form action="/" className="search-form"  onSubmit={searchaction}>
+                <button type="submit" className="search-icon" ><i className="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" value={searchvalue}
+                    onChange={(e) => setSearchvalue(e.target.value)}
+                    className="search-input" placeholder="Search for anything" />
                     
                 </form>
             </div>

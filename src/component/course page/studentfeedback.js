@@ -3,9 +3,7 @@ import React from 'react'
 function Studentfeedback(props) {
   return (
     <section>
-        <div className="container">
-          <div className="row">
-            <div className="col col-8">
+        
               <div>
       
                 <h2 classNameName='student-header'>Student feedback</h2>
@@ -53,9 +51,7 @@ function Studentfeedback(props) {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+            
       </section>
   )
 }

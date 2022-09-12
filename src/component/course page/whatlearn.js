@@ -3,9 +3,8 @@ import React from 'react'
 function Whatlearn(props) {
 
   return (
-    <div className="container ">
-        <div className="row padleft">
-          <div className="col col-8 what-learn">
+    <div className="what-learn ">
+        
             <h2 className="learn-list-header test">What you'll learn</h2>
             <ul>
               {props.course.outcomes.map((it) => {
@@ -23,8 +22,7 @@ function Whatlearn(props) {
             </ul>
             
           </div>
-        </div>
-      </div>
+        
   )
 }
 

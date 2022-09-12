@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <div className="footer-secsion1">
-  
+        
         <div className="footer-secsion1-div1">
   
           <span>

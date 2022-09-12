@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .nav-container {
   position: relative;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -29,7 +28,6 @@ body {
   align-items: center;
   cursor: pointer;
 }
-
 .dropdownbtn {
   cursor: pointer;
   /* color:#5624d0; */
@@ -42,7 +40,6 @@ body {
   font-size: 14px;
   color: #1c1d1f;
 }
-
 .search {
   border: 1px solid #1c1d1f;
   position: relative;
@@ -83,7 +80,6 @@ body {
   background: transparent;
   font-size: 1rem;
 }
-
 .btn-1 {
   text-decoration: none;
   color: #1c1d1f;
@@ -95,7 +91,6 @@ body {
   display: flex;
   align-items: center;
 }
-
 .business {
   cursor: pointer;
 }
@@ -108,7 +103,6 @@ body {
   font-weight: 700;
   font-size: 14px;
 }
-
 .teach {
   text-decoration: none;
   color: #1c1d1f;
@@ -136,7 +130,6 @@ body {
   min-width: 80px;
   height: 40px;
 }
-
 .signup {
   min-width: 80px;
   height: 40px;
@@ -155,7 +148,6 @@ body {
   margin-right: 10px;
   font-size: 20px;
 }
-
 .head {
   font-family: sans;
 }
@@ -168,7 +160,6 @@ body {
 .head .head-container img {
   width: 90%;
 }
-
 .header-paragraph {
   position: absolute;
   background-color: white;
@@ -187,12 +178,10 @@ body {
 .pa {
   font-size: 14px;
 }
-
 .container1 {
   position: relative;
   margin: 2% 5%;
 }
-
 .course {
   border: #1c1d1f 1px solid;
   margin-bottom: 30px;
@@ -230,11 +219,11 @@ body {
 .mar {
   padding: 0 2%;
 }
-
 .description {
   width: 70%;
   margin-bottom: 40px;
   margin-left: 10px;
+  margin-top: 30px;
 }
 .para {
   font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
@@ -353,83 +342,9 @@ body {
   font-size: 2rem;
 }
 
-@media only screen and (max-width: 1100px) {
-  .business {
-    display: none;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .teach {
-    display: none;
-  }
-  .header-paragraph {
-    position: relative;
-    width: 70%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    left: auto;
-    top: auto;
-  }
-  .head-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .nav-media {
-    display: none;
-  }
-  .menu1 {
-    display: block;
-    margin-left: 5%;
-    margin-right: 55%;
-  }
-}
-@media only screen and (max-width: 1030px) {
-  .description {
-    width: 80%;
-    margin: auto;
-    padding: auto;
-  }
-  .explore1 {
-    margin: auto;
-    padding: auto;
-    margin-bottom: 30px;
-  }
-  .container-flex {
-    justify-content: center;
-  }
-}
-
 /* cart */
 
-@media only screen and (max-width: 1030px) {
-  .description {
-    width: 80%;
-    margin: auto;
-    padding: auto;
-  }
-  .explore1 {
-    margin: auto;
-    padding: auto;
-    margin-bottom: 30px;
-  }
-  .container-flex {
-    justify-content: center;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .cart1 {
-    width: 28%;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .cart1 {
-    width: 50%;
-  }
-}
+
 /* */
 .second-navbar{
   background-color: #1c1d1f;
@@ -567,11 +482,8 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-size: 0.8rem;
+}
 
-}
-.padleft{
-  margin-left: 1%;
-}
 .details-more div span,.details-more div p{
    color: white;
 }
@@ -656,7 +568,7 @@ body {
   border: none;
   cursor: pointer;
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 40px;
   font-weight: 700;
   display: flex;
@@ -703,7 +615,7 @@ body {
 font-size:1rem;
 font-weight: 500;
 color: #1c1d1f;
-padding : 0.1rem 0;
+padding: 0.1rem 0;
 }
 /* end of requirement */
 /* start of description */
@@ -764,7 +676,6 @@ padding : 0.1rem 0;
   color: #1c1d1f;
   display: flex;
   font-weight: 400;
-  
   font-size: 0.9rem;
    padding-top: 20px; 
 }
@@ -778,7 +689,6 @@ padding : 0.1rem 0;
   margin-top: 15px;
 }
 .instractor-p{
-   
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -1004,95 +914,91 @@ margin-bottom: 8px;
 color: #5624d0;
 }
 .feedback-star{
-font-size: 1rem;
+  font-size: 1rem;
 }
 /* end of feedback  */
 /* start of course cart */
 .course-cart{
-width: 400px;
-background-color: white;
-font-size: 1rem;
-color: black;
-border: #1c1d1f 1px solid;
-margin: 50px;
-z-index: 1;
-position: absolute;
-top: 80px;
-right: 0;
+  width: 350px;
+  background-color: white;
+  font-size: 1rem;
+  color: black;
+  border: #1c1d1f 1px solid;
+  z-index: 3;
+  position: absolute;
+  top: 100px;
+  right: 5%;
 }
 .cart-img{
-width: 100%;
+  width: 100%;
 }
 .cart-img img{
-width: 100%;
+  width: 100%;
 }
-.cart-container{
-margin: 20px;
 
-}
 .cart-price{
-color: #1c1d1f;
-font-size: 2rem;
-font-weight: bold;
+  color: #1c1d1f;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .discound-price{
-color: #6a6f73;
-text-decoration: line-through;
+  color: #6a6f73;
+  text-decoration: line-through;
 }
 .cart-off{
-color: #1c1d1f;
-display: block;
-font-size: 1rem;
+  color: #1c1d1f;
+  display: block;
+  font-size: 1rem;
 }
 .cart-last-price{
-color: #b32d0f;
-font-size: 0.9rem;
+  color: #b32d0f;
+  font-size: 0.9rem;
 }
 .discound-cart{
-margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 .add-to-cart{
-width: 90%;
-height: 3rem;
-margin-top: 2%;
-background-color: #8710d8;
-border: none;
-outline: none;
-font-size: 1rem;
-font-weight: 700;
-color: white;
+  width: 100%;
+  height: 3rem;
+  margin-top: 2%;
+  background-color: #8710d8;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
 }
 .buy-now{
-width: 90%;
-height: 3rem;
-margin-top: 2%;
-background-color: transparent;
-border: 1px solid #1c1d1f;
-font-size: 1rem;
-font-weight: 700;
+  width: 100%;
+  height: 3rem;
+  margin-top: 2%;
+  background-color: transparent;
+  border: 1px solid #1c1d1f;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.cart-container{
+  width: 90%;
 }
 .money-back{
-font-size: 0.8rem;
-font-weight: 400;
-margin: 20px 0;
-text-align: center;
-}
-.money-back span{
-margin-left: -20px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 20px 0;
+  text-align: center;
 }
 .course-cart-data-include h3{
-font-size: 1rem;
-font-weight:bold;
+  font-size: 1rem;
+  font-weight:bold;
 }
 .course-cart-data-include ul{
-list-style: none;
-margin: 0;
+  list-style: none;
+  margin: 0;
 }
 .course-cart-data-include li{
-margin-left: -2rem;
-font-size: 0.9rem;
-font-weight: 400;
-margin-bottom: 10px;
+  margin-left: -1.7rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 .course-cart-data-include li i{
 padding-right: 5px;
@@ -1102,13 +1008,13 @@ width: 20px;
 .share-gift-coupon a{
 text-decoration: none;
 color: black;
-font-size: 0.9rem;
+font-size: 0.88rem;
 font-weight: bold;
 padding-bottom: 2px;
 border-bottom: #1c1d1f 1px solid;
+letter-spacing: -0.02rem;
 }
 .share-gift-coupon{
-width: 85%;
 display: flex;
 justify-content: space-between;
 }
@@ -1126,7 +1032,6 @@ font-weight: bold;
 font-size: 0.9rem;
 font-weight: 400;
 }
-
 /* end of course cart */
 
 /* start of footer */
@@ -1137,30 +1042,25 @@ color: #fff;
 padding: 0 40px;
 font-size: 0.9rem;
 }
-
 .footer-secsion1{
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; 
-  height: 90px;
-  margin-bottom: 40px;
   border-color: white;
   font-size: 0.9rem;
-  
 }
 .footer-line{
-margin: -25px -35px 30px -35px;
+margin: 30px -35px 30px -35px;
 }
 .footer-secsion1 img{
-margin: 5px;
+  margin: 5px;
 }
 .footer-secsion1-div1{
 font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
 font-weight: 700;
 letter-spacing: -0.0rem;
 font-size: 1.2rem; 
-
 }
 .footer-secsion1-div1 a{
 color: #cec0fc;
@@ -1168,12 +1068,11 @@ text-decoration: underline;
 }
 .footer-secsion2{
 display: flex;
+justify-content: space-between;
 height: 200px;
-
-
 }
 .footer-secsion2 ul{
-flex-basis: 25.6rem;
+
   margin-right: 1.6rem;
   margin-bottom: 0;
   list-style: none;
@@ -1197,21 +1096,142 @@ margin-bottom: 100px;
 color: white;
 font-size: 0.9rem;
 }
-
 .footer-secsion2 button{
  background-color: transparent;
 border-color: wheat;
 height: 40px;
 width: 150px;
-
-
 }
 .footer-secsion2 button span{
 color: white;
-
 }
 .footer-secsion2 button i{
 color: white;
-
 }
 /* end of footer */
+.display-block{
+  display: inline-block;
+}
+.responsive{
+  color:white;
+  display: none;
+}
+.responsive-img{
+  width: 100%;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 1030px) {
+  .description {
+    width: 80%;
+    margin: auto;
+    padding: auto;
+  }
+  .explore1 {
+    margin: auto;
+    padding: auto;
+    margin-bottom: 30px;
+  }
+  .container-flex {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .cart1 {
+    width: 28%;
+  }
+  .footer-secsion1 img{
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .cart1 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .business {
+    display: none;
+  }
+  .course-cart{
+    display: none;
+  }
+  .cart-price{
+    color: white;
+  }
+  .responsive{
+    display: inline-block;
+  }
+  .header-media-link{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    text-decoration: underline;
+  }
+  .header-media-link a{ color: white;}
+  .display-block{
+    display: block;
+  }
+  .money-back{
+    display: block;
+  }
+  .width-25{
+    width: 25%;
+  }
+  .second-navbar{
+    bottom: 0;
+    top: unset;
+  }
+  .btn-header{
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .teach {
+    display: none;
+  }
+  .header-paragraph {
+    position: relative;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    left: auto;
+    top: auto;
+  }
+  .head-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .nav-media {
+    display: none;
+  }
+  .menu1 {
+    display: block;
+    margin-left: 5%;
+    margin-right: 55%;
+  }
+}
+.seemore,.showmore,.showmore2{
+  display: none;
+}
+
+.more-content{
+  border: 1px solid #1c1d1f;
+  height: 3rem;
+  color: #1c1d1f;
+  font-weight: bold;
+  background-color: transparent;
+  margin-top: 1.2rem;
+  width: 100%;
+  text-align: center;
+}
+.more-content:hover{
+  color: #1c1d1f;
+  background-color: rgba(0,0,0,.04);
+}
