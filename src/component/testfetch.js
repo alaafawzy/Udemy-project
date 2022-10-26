@@ -7,7 +7,7 @@ function Testfetch() {
     const [loading,setLoading]=useState(true);
     const [error,setError]=useState(null);
     useEffect(()=>{
-        fetch('http://localhost:3001/courses')
+        fetch('https://alaafawzy.github.io/Udemy-project-data/dp.json')
             .then(response => {
                 if(response.ok){
                     return response.json();
