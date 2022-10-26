@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "02fb56b475fe4f7b004f",
+    "revision": "d772f4e9baec057a21a0",
     "url": "/Udemy-project/static/css/main.83a905bf.chunk.css"
   },
   {
-    "revision": "02fb56b475fe4f7b004f",
-    "url": "/Udemy-project/static/js/main.02fb56b4.chunk.js"
+    "revision": "d772f4e9baec057a21a0",
+    "url": "/Udemy-project/static/js/main.d772f4e9.chunk.js"
   },
   {
     "revision": "4bf245bff49bb0b79407",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/Udemy-project/static/js/runtime~main.86ac18df.js"
   },
   {
-    "revision": "f5448c2773cbe133cf2507ec69f80965",
+    "revision": "6703e3bc5d925dc6107c3c5b022d3ea2",
     "url": "/Udemy-project/index.html"
   }
 ];
